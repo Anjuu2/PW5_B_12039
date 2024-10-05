@@ -103,8 +103,9 @@
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-acccordion="false">
                             <li class="nav-item">
                                 <a href="{{url('gyms/index')}}" class="nav-link">
-                                    <i class="nav-icen fas fa-home"></i>
+                                    <i class="nav-icon fas fa-home"></i>
                                     <p>Home</p>
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -119,7 +120,7 @@
                 <div class="float-right d-none d-sm-inline">
                     220712039
                 </div>
-                <strong>Copyright &copy; {{date('Y')}} <a href="#">Primefit</a>.</strong> All rights reserved.
+                <strong>Copyright &copy; {{date('Y')}} <a href="#">Primefit</a>. </strong> All rights reserved.
             </footer>
         </div>
 

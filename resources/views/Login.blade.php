@@ -75,7 +75,7 @@
                                         <h4 class="mb-3 text-center">LOGIN</h4>
                                     </div>
 
-                                    <div class="form-floating-mb-2">
+                                    <div class="form-floating">
                                         <input type="text" class="form-control" id="floatingInput" placeholder="Nama Pegawai" required />
                                         <label for="floatingInput">Nama Pegawai</label>
                                     </div>
