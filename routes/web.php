@@ -46,3 +46,70 @@ Route::get('/gyms/index', function(){
     ]
     ]);
 });
+
+Route::get('/gyms/presensi', function(){
+    setlocale(LC_TIME, 'id_ID.UTF-8');
+    $tanggal = strftime('%A, %d-%b-%Y');
+    $hari = strftime('%A');
+    $tglModal = strftime('%d-%b-%Y');
+
+    return view('gyms.presensi',  [
+        'data' => [
+            [
+                'kelas' => "Gaming",
+                'instruktur' => 'Petrus Juan Pradipta Raindarta',
+                'ruang' => 'Kelas B',
+                'total' =>  6,
+                'rating' => 5,
+                'tanggal'=> $tanggal,
+                'hari' =>  $hari,
+                'tglModal'=> $tglModal,
+                'kode' => '220712039'
+            ],
+        ],
+        'members' => [
+            [
+                'nama' => 'Amba',
+                'email' => 'amba@gmail.com',
+                'telp' => '083386058366',
+                'kartu' => 'Gold',
+                'pembayaran' => 'Hutang teman',
+            ],
+            [
+                'nama' => 'Rusdi',
+                'email' => 'rusdi@gmail.com',
+                'telp' => '082576921872',
+                'kartu' => 'Silver',
+                'pembayaran' => 'Langsung Bayar',
+            ],
+            [
+                'nama' => 'Faiz',
+                'email' => 'faiz@gmail.com',
+                'telp' => '084476377979',
+                'kartu' => 'Gold',
+                'pembayaran' => 'Hutang teman',
+            ],
+            [
+                'nama' => 'Azizi',
+                'email' => 'azizi@gmail.com',
+                'telp' => '0825693659469',
+                'kartu' => 'Silver',
+                'pembayaran' => 'Langsung  Bayar',
+            ],
+            [
+                'nama' => 'Muthe',
+                'email' => 'muthe@gmail.com',
+                'telp' => '083385329548',
+                'kartu' => 'Gold',
+                'pembayaran' => 'Hutang teman',
+            ],
+            [
+                'nama' => 'Kathrin',
+                'email' => 'kathrin@gmail.com',
+                'telp' => '093362549773',
+                'kartu' => 'Silver',
+                'pembayaran' => 'Langsung  Bayar',
+            ]
+        ]
+    ]);
+});
